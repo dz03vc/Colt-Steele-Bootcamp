@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <header>
+        <h1>Forms Demo</h1>
+    </header>
+
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input type="text" placeholder="Username" id="username" name="username">
+        </p>
+        <p>
+            <label for="pass">Enter a Password:</label>
+            <input type="password" placeholder="Password" id="pass" name="pass"><br>
+        </p>
+        <p>
+            <label for="color">Captcha | Pick the color Green:</label>
+            <input type="color" id="color" name="color"><br>
+        </p>
+        <p>
+            <label for="birth">Choose your Birthday</label>
+            <input type="date" id="birth" name="birth"><br>
+        </p>
+        <p>
+            <label for="visits">How many times have you visited this page?</label>
+            <input type="number" placeholder="# of Visits" id="visits" name="visits"><br>
+        </p>
+        <p>
+            <label for="upload">Please upload an image of your ID</label>
+            <input type="file" id="upload" name="ID"><br>
+        </p>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <h2>GitHub</h2>
+    <form action="https://github.com/search">
+        <input type="text" name="q" id="search_github">
+        <button>Search GitHub</button>
+    </form>
+    <hr>
+    <h2>YouTube</h2>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" id="search_youtube">
+        <button>Search YouTube</button>
+    </form>
+    <hr>
+    <footer>
+        Coded by <a href="https://github.com/dz03vc">dz03vc</a> using HTML5 language at VSCode following <a
+            href="https://www.udemy.com/course/the-web-developer-bootcamp">Colt Steele's
+            Web Developer Bootcamp.</a><br>
+        <time datetime="2024-05-22">May 2024</time>
+    </footer>
+</body>
+
+</html>
