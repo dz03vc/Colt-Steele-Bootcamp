@@ -31,7 +31,7 @@
         </p>
         <p>
             <label for="visits">How many times have you visited this page?</label>
-            <input type="number" placeholder="# of Visits" id="visits" name="visits"><br>
+            <input type="number" placeholder="# of Visits" id="visits" name="visits" min="1" max="10000"><br>
         </p>
         <p>
             <label for="upload">Please upload an image of your ID</label>
@@ -42,14 +42,61 @@
     <hr>
     <h2>GitHub</h2>
     <form action="https://github.com/search">
-        <input type="text" name="q" id="search_github">
-        <button>Search GitHub</button>
+        <input type="text" name="q" id="search_github" placeholder="Type your search here">
+        <button>Search</button>
     </form>
     <hr>
     <h2>YouTube</h2>
     <form action="https://www.youtube.com/results">
-        <input type="text" name="search_query" id="search_youtube">
-        <button>Search YouTube</button>
+        <input type="text" name="search_query" id="search_youtube" placeholder="Type your search here">
+        <button>Search</button>
+    </form>
+    <hr>
+    <h2>FIREARMS</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_firearm" id="agree">
+        <label for="agree">Do you agree to choose your favorite caliber below?</label>
+        <p>
+            <input type="radio" name="caliber" id="9mm" value="9mm">
+            <label for="9mm">9mm</label><br>
+            <input type="radio" name="caliber" id=".40" value=".40">
+            <label for=".40">.40</label><br>
+            <input type="radio" name="caliber" id="5.56" value="5.56">
+            <label for="5.56">5.56</label><br>
+        </p>
+        <p>
+            <label for="gun_manufacturer">What is your favorite gun manufacturer?</label>
+            <select name="gun_manufacturer" id="gun_manufacturer">
+                <option value="">--Choose a Manufacturer--</option>
+                <option value="glock">Glock</option>
+                <option value="taurus">Taurus</option>
+                <option value="S&W">Smith & Wesson</option>
+                <option value="ruger">Ruger</option>
+            </select>
+        </p>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <form action="/ammocount">
+        <label for="ammo">Ammo Count</label>
+        <input type="range" min="0" max="10000" step="50" name="amoocount">
+        <button>Submit</button>
+    </form>
+    <hr>
+    <form action="/whatelse">
+        <h2><label for="miss">Did I miss something?</label></h2><br>
+        <textarea name="moreinfo" id="miss" placeholder="Type here what I missed" cols="40" rows="5"></textarea><br>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <h2>Validations</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" minlength="8" maxlength="20" required>
+            <button>Submit</button>
     </form>
     <hr>
     <footer>
