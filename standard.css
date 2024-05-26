@@ -1,0 +1,28 @@
+h1 {
+    color: darkblue;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: plum wavy underline;
+    letter-spacing: 20px;
+    font-size: 30px;
+}
+
+h2 {
+    color: blue;
+}
+
+h3 {
+    color: indigo;
+}
+
+h4 {
+    color: purple;
+}
+
+button {
+    color: blue;
+}
+
+::placeholder {
+    color: teal;
+}
