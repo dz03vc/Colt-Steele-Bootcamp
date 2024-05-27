@@ -1,0 +1,77 @@
+body {
+    font-family: monospace;
+    background-color: #dad7cd;
+    color: #588157;
+}
+
+button {
+    color: #3a5a40;
+    background-color: #a3b18a;
+}
+
+h1,
+h2 {
+    color: #588157;
+}
+
+#signup {
+    background-color: #dad7cd;
+    color: #588157;
+}
+
+#signup:hover {
+    background-color: #588157;
+    color: #dad7cd;
+}
+
+#searchlabel {
+    color: #344E41;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: #cfe1b9;
+}
+
+::selection {
+    background-color: #a3b18a;
+}
+
+.tag {
+    background-color: #aab8aa;
+    font-size: 12px;
+}
+
+.post a {
+    color: #588157;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a {
+    color: #344e41;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input[type="password"] {
+    color: #344E41;
+}
+
+input[type="text"] {
+    color: #344E41;
+}
+
+button:hover {
+    background-color: #344E41;
+    color: #a3b18a;
+}
+
+button:active {
+    background-color: #718355;
+    color: #e9f5db;
+}
