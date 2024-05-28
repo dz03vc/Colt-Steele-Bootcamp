@@ -22,6 +22,7 @@ h2 {
 #signup:hover {
     background-color: #588157;
     color: #dad7cd;
+    transition: 1s;
 }
 
 #searchlabel {
@@ -41,6 +42,11 @@ h2 {
 .tag {
     background-color: #aab8aa;
     font-size: 12px;
+}
+
+.tag:hover {
+    margin-left: 10px;
+    transition: 0.5s ease-in-out;
 }
 
 .post a {
@@ -69,6 +75,7 @@ input[type="text"] {
 button:hover {
     background-color: #344E41;
     color: #a3b18a;
+    transition: 1s;
 }
 
 button:active {
